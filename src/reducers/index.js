@@ -1,14 +1,8 @@
 import { combineReducers } from 'redux';
-
-const INITIAL_STATE = { };
-
-const mainReducer = (state = INITIAL_STATE, action) => {
-  switch (action.type) {
-    default:
-      return state
-  }
-};
+import loginReducer from './loginReducer';
+import regReducer from './regReducer';
 
 export default combineReducers({
-  mainReducer: mainReducer,
+  login: loginReducer,
+  reg: regReducer,
 });

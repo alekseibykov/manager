@@ -20,10 +20,14 @@ class LoginForm extends React.Component {
     const { email, password } = this.props;
     firebase.auth().signInWithEmailAndPassword(email, password)
       .then(() => {
-        this.props.navigation.navigate('ContentScreen');
+        console.log('hey');
       })
       .catch(function(error) {
+        // Handle Errors here.
         console.log(error.message);
+        var errorCode = error.code;
+        var errorMessage = error.message;
+        // ...
       });
   }
 
@@ -32,31 +36,24 @@ class LoginForm extends React.Component {
     const {navigate} = this.props.navigation;
     return (
       <Card>
-        <CardSection>
-          <TextInput
-            style={styles.inputStyle}
-            placeholder={'Email@gmail.com'}
-            onChangeText={(text) => this._onChangeEmail(text)}
-            value={this.props.email}
-          />
-        </CardSection>
-        <CardSection>
-          <TextInput
-            style={styles.inputStyle}
-            secureTextEntry
-            placeholder={'Password'}
-            onChangeText={(text) => this._onChangePassword(text)}
-            value={this.props.password}
-          />
-        </CardSection>
-        <CardSection>
-          <Button onPress={this._onPress.bind(this)}>
-            Login
-          </Button>
-          <Button onPress={() => navigate('RegistrationForm')}>
-            Registration
-          </Button>
-        </CardSection>
+        <Button onPress={this._onPress.bind(this)}>
+          Login
+        </Button>
+        <Button onPress={this._onPress.bind(this)}>
+          Login
+        </Button>
+        <Button onPress={this._onPress.bind(this)}>
+          Login
+        </Button>
+        <Button onPress={this._onPress.bind(this)}>
+          Login
+        </Button>
+        <Button onPress={this._onPress.bind(this)}>
+          Login
+        </Button>
+        <Button onPress={this._onPress.bind(this)}>
+          Login
+        </Button>
       </Card>
     );
   }
