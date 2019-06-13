@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "34767162429",
+    "firebase_url": "https://manager-629ec.firebaseio.com",
+    "project_id": "manager-629ec",
+    "storage_bucket": "manager-629ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:34767162429:android:ffeaf03b4d439a16",
+        "android_client_info": {
+          "package_name": "com.bykov.manager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "34767162429-ni9v6d6pu205shtqec7qjtvc9ehsjn90.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOymDSMABmR1d_TWOGu3qpnBOUIGKPJbE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "34767162429-ni9v6d6pu205shtqec7qjtvc9ehsjn90.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
